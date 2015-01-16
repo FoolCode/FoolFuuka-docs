@@ -3,19 +3,17 @@
 Configuration
 =============
 
-While most of the configurable settings are exposed through the web administrative panel, there are still a
-number of settings that can only be modified manually due to security concerns.
+While most of the configurable settings are exposed through the web administrative
+panel, there are still a number of settings that can only be modified manually due
+to security concerns.
 
+.. note::
 
-Config Files
-------------
-
-In this documentation, we will use ``dot`` notations to specify the location of
-the config key being listed.
-
+    In this documentation, we will use ``dot`` notations to specify the location of
+    the config key being listed.
 
 FoolFrame
-^^^^^^^^^
+---------
 
 These config files are used to manage many of the core settings in the FoolFuuka
 framework. You can locate these files in the following path after installation:
@@ -29,170 +27,169 @@ framework. You can locate these files in the following path after installation:
 
 
 cache
-+++++
+^^^^^
 
-.. describe:: type
+    .. describe:: type
 
-    :Type:    ``STRING``
-    :Default: dummy
+        :Type:    ``STRING``
+        :Default: dummy
 
-.. describe:: format
+    .. describe:: format
 
-    :Type:    ``STRING``
-    :Default: smart_json
+        :Type:    ``STRING``
+        :Default: smart_json
 
-.. describe:: prefix
+    .. describe:: prefix
 
-    :Type:    ``STRING``
-    :Default: ``empty``
+        :Type:    ``STRING``
+        :Default: ``empty``
 
-.. describe:: servers
+    .. describe:: servers
 
-    :Type:    ``ARRAY``
-    :Default: ``empty``
+        :Type:    ``ARRAY``
+        :Default: ``empty``
 
 
 config
-++++++
+^^^^^^
 
-.. describe:: config.cookie_prefix
+    .. describe:: config.cookie_prefix
 
-    :Type:    ``STRING``
-    :Default: ``empty``
+        :Type:    ``STRING``
+        :Default: ``empty``
 
-.. describe:: install.installed
+    .. describe:: install.installed
 
-    :Type:    ``BOOLEAN``
-    :Default: ``false``
+        :Type:    ``BOOLEAN``
+        :Default: false
 
-.. describe:: modules.installed
+    .. describe:: modules.installed
 
-    :Type:    ``ARRAY``
+        :Type:    ``ARRAY``
 
 
 db
-++
+^^
 
-.. describe:: active
+    .. describe:: active
 
-    :Type:    ``STRING``
-    :Default: default
+        :Type:    ``STRING``
+        :Default: default
 
-.. describe:: default.driver
+    .. describe:: default.driver
 
-    :Type:    ``STRING``
-    :Default: pdo_mysql
+        :Type:    ``STRING``
+        :Default: pdo_mysql
 
-.. describe:: default.host
+    .. describe:: default.host
 
-    :Type:    ``STRING``
-    :Default: localhost
+        :Type:    ``STRING``
+        :Default: localhost
 
-.. describe:: default.port
+    .. describe:: default.port
 
-    :Type:    ``INT``
-    :Default: 3306
+        :Type:    ``INT``
+        :Default: 3306
 
-.. describe:: default.dbname
+    .. describe:: default.dbname
 
-    :Type:    ``STRING``
-    :Default: ``empty``
+        :Type:    ``STRING``
+        :Default: ``empty``
 
-.. describe:: default.user
+    .. describe:: default.user
 
-    :Type:    ``STRING``
-    :Default: ``empty``
+        :Type:    ``STRING``
+        :Default: ``empty``
 
-.. describe:: default.password
+    .. describe:: default.password
 
-    :Type:    ``STRING``
-    :Default: ``empty``
+        :Type:    ``STRING``
+        :Default: ``empty``
 
-.. describe:: default.persistent
+    .. describe:: default.persistent
 
-    :Type:    ``BOOLEAN``
-    :Default: ``false``
+        :Type:    ``BOOLEAN``
+        :Default: false
 
-.. describe:: default.prefix
+    .. describe:: default.prefix
 
-    :Type:    ``STRING``
-    :Default: ``empty``
+        :Type:    ``STRING``
+        :Default: ``empty``
 
-.. describe:: default.charset
+    .. describe:: default.charset
 
-    :Type:    ``STRING``
-    :Default: utf8mb4
+        :Type:    ``STRING``
+        :Default: utf8mb4
 
 
 foolauth
-++++++++
+^^^^^^^^
 
-.. describe:: db_connection
+    .. describe:: db_connection
 
-    :Type:    ``STRING``
-    :Default: ``null``
+        :Type:    ``STRING``
+        :Default: null
 
-.. describe:: table_name
+    .. describe:: table_name
 
-    :Type:    ``STRING``
-    :Default: ``users``
+        :Type:    ``STRING``
+        :Default: users
 
-.. describe:: table_autologin_name
+    .. describe:: table_autologin_name
 
-    :Type:    ``STRING``
-    :Default: ``user_autologin``
+        :Type:    ``STRING``
+        :Default: user_autologin
 
-.. describe:: table_login_attempts_name
+    .. describe:: table_login_attempts_name
 
-    :Type:    ``STRING``
-    :Default: ``user_login_attempts``
+        :Type:    ``STRING``
+        :Default: user_login_attempts
 
-.. describe:: table_columns
+    .. describe:: table_columns
 
-    :Type:    ``ARRAY``
-    :Default: ``['*']``
+        :Type:    ``ARRAY``
 
-.. describe:: guest_login
+    .. describe:: guest_login
 
-    :Type:    ``BOOLEAN``
-    :Default: ``true``
+        :Type:    ``BOOLEAN``
+        :Default: true
 
-.. describe:: groups
+    .. describe:: groups
 
-    :Type:    ``ARRAY``
+        :Type:    ``ARRAY``
 
-.. describe:: roles
+    .. describe:: roles
 
-    :Type:    ``ARRAY``
+        :Type:    ``ARRAY``
 
-.. describe:: login_hash_salt
+    .. describe:: login_hash_salt
 
-    :Type:    ``STRING``
-    :Default: ``empty``
+        :Type:    ``STRING``
+        :Default: ``empty``
 
-.. describe:: salt
+    .. describe:: salt
 
-    :Type:    ``STRING``
-    :Default: ``empty``
+        :Type:    ``STRING``
+        :Default: ``empty``
 
-.. describe:: username_post_key
+    .. describe:: username_post_key
 
-    :Type:    ``STRING``
-    :Default: ``username``
+        :Type:    ``STRING``
+        :Default: username
 
-.. describe:: password_post_key
+    .. describe:: password_post_key
 
-    :Type:    ``STRING``
-    :Default: ``password``
+        :Type:    ``STRING``
+        :Default: password
 
-.. describe:: attempts_to_lock
+    .. describe:: attempts_to_lock
 
-    :Type:    ``INT``
-    :Default: 10
+        :Type:    ``INT``
+        :Default: 10
 
 
 FoolFuuka
-^^^^^^^^^
+---------
 
 These config files are used to manage many of the core settings in FoolFuuka
 that we considered very important and shouldn't be exposed in the web interface.
@@ -206,37 +203,37 @@ You can locate these files in the following path after installation: ``assets/co
 
 
 config
-++++++
+^^^^^^
 
-.. describe:: comment.secure_tripcode_salt
+    .. describe:: comment.secure_tripcode_salt
 
-    :Type:    ``STRING``
-    :Default: ``null``
+        :Type:    ``STRING``
+        :Default: null
 
-This is the salt used to for secure tripcodes. It is recommend that this salt key
-be changed when exposed or kept consistent between installations.
+    This is the salt used to for secure tripcodes. It is recommend that this salt key
+    be changed when exposed or kept consistent between installations.
 
 
-.. describe:: media.filecheck
+    .. describe:: media.filecheck
 
-    :Type:    ``BOOLEAN``
-    :Default: ``true``
+        :Type:    ``BOOLEAN``
+        :Default: true
 
-Checks if the media file exists on the disk. The setting does impact disk performance
-when enabled due to lstat calls for each file being checked.
+    Checks if the media file exists on the disk. The setting does impact disk performance
+    when enabled due to lstat calls for each file being checked.
 
-+-----------+------------------------------------------------------------------------+
-| Value     | Effect                                                                 |
-+===========+========================================================================+
-| ``true``  | enables the check and returns a generated link based on file existence |
-+-----------+------------------------------------------------------------------------+
-| ``false`` | disables the check and returns a full link                             |
-+-----------+------------------------------------------------------------------------+
+    +-----------+------------------------------------------------------------------------+
+    | Value     | Effect                                                                 |
+    +===========+========================================================================+
+    | ``true``  | enables the check and returns a generated link based on file existence |
+    +-----------+------------------------------------------------------------------------+
+    | ``false`` | disables the check and returns a full link                             |
+    +-----------+------------------------------------------------------------------------+
 
 
 foolauth
-++++++++
+^^^^^^^^
 
-.. describe:: roles
+    .. describe:: roles
 
-    :Type:    ``ARRAY``
+        :Type:    ``ARRAY``

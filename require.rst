@@ -12,12 +12,6 @@ You'll need to install one of the following web servers to allow users to access
 * nginx (Recommended)
 
 
-PHP/HHVM
---------
-
-While FoolFuuka is designed to work on PHP 5.4 or newer, it is also compatible with HHVM.
-
-
 Database
 --------
 
@@ -33,6 +27,19 @@ FoolFuuka supports the following database servers:
     front-end for `Asagi <https://github.com/FoolCode/asagi>`_ and archives.
 
 
+Git/Composer
+------------
+
+FoolFuuka utilizes both `Git <http://git-scm.com/>`_ and `Composer <https://getcomposer.org/>`_ to manage
+all of its dependencies, software updates, and web assets.
+
+
+PHP/HHVM
+--------
+
+While FoolFuuka is designed to work on PHP 5.4 or newer, it is also compatible with HHVM.
+
+
 Search Server
 -------------
 
@@ -46,8 +53,13 @@ users with search capabilities.
     should be used to generate a new sphinx configuration file accordingly.
 
 
-Git/Composer
-------------
+ImageMagick
+-----------
 
-FoolFuuka utilizes both `Git <http://git-scm.com/>`_ and `Composer <https://getcomposer.org/>`_ to manage
-all of its dependencies, software updates, and web assets.
+If you plan to use FoolFuuka as an image-based bulletin board, ImageMagick must be installed on the
+server. The binary files are used to generate and manipulate image files.
+
+.. note::
+
+    You may be required to specify the path for ImageMagick's ``convert`` binary in the administrative
+    panel.
