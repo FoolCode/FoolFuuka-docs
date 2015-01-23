@@ -13,7 +13,7 @@ Via Composer
 
 .. code-block:: sh
 
-    $ composer create-project foolz/foolfuuka foolfuuka
+    $ composer create-project foolz/foolfuuka foolfuuka --prefer-source
     $ cd foolfuuka
     $ composer dump-autoload --optimize
 
