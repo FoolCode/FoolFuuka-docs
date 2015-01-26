@@ -1,0 +1,65 @@
+From 2.1 to 2.2
+===============
+
+Backup
+------
+
+We recommend that you create a backup of the following folders or move them to a safe location:
+
+* ``app/``
+* ``public/foolfuuka/boards/``
+
+.. note::
+
+    Depending upon your configuration, you may not need to backup the ``public/foolfuuka/boards/``
+    directory.
+
+
+Obtain the Latest Code
+----------------------
+
+.. code-block:: sh
+
+    $ cd /path/to/foolfuuka
+    $ git checkout 2-2-stable
+    $ composer update --optimize
+
+
+Update Core Framework Config Files
+----------------------------------
+
+You are required to update the ``app/foolz/foolframe/config/config.php`` file to match the following
+config provided:
+
+.. code-block:: php
+
+    <?php
+    return array(
+        'config' => array(
+            'cookie_prefix' => 'foolframe_NEW_',
+        ),
+        'install' => array(
+            'installed' => true,
+        ),
+        'modules' => array(
+            'installed' => array(
+                'foolframe' => array(
+                    'context' => '\\Foolz\\FoolFrame\\Model\\Context',
+                    'namespace' => 'foolz/foolframe',
+                ),
+                'foolfuuka' => array(
+                    'context' => '\\Foolz\\FoolFuuka\\Model\\Context',
+                    'namespace' => 'foolz/foolfuuka',
+                ),
+            ),
+        ),
+    );
+
+
+Restart Services
+----------------
+
+You may need to restart the following services:
+
+* PHP/HHVM
+* Apache/Nginx/etc.

@@ -21,7 +21,7 @@ Via Composer
 
     When asked to remove the VCS files (.git), you must choose ``N`` so that the version control system
     remains intact. This will allow you to perform future upgrades.
- 
+
 
 Via Source Code
 ^^^^^^^^^^^^^^^
@@ -41,7 +41,6 @@ Upgrading
 
     $ git fetch --all
     $ git checkout 2-1-stable
-    $ git pull
     $ composer update --optimize
 
 .. note::
