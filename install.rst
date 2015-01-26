@@ -17,6 +17,11 @@ Via Composer
     $ cd foolfuuka
     $ composer dump-autoload --optimize
 
+.. warning::
+
+    When asked to remove the VCS files (.git), you must choose ``N`` so that the version control system
+    remains intact. This will allow you to perform future upgrades.
+ 
 
 Via Source Code
 ^^^^^^^^^^^^^^^
