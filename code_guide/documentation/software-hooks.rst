@@ -13,7 +13,7 @@ Foolz\\Plugin\\Plugin::execute#<plugin-name>
     ->setParam('context', $this->getContext())
 
 
-Foolz\\Foolframe\\Model\\Plugin::install#<plugin-name>
+Foolz\\FoolFrame\\Model\\Plugin::install#<plugin-name>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -25,7 +25,7 @@ Foolz\\Foolframe\\Model\\Plugin::install#<plugin-name>
 FoolFrame
 ---------
 
-Foolz\\Foolframe\\Controller\\Admin::before#var.sidebar
+Foolz\\FoolFrame\\Controller\\Admin::before#var.sidebar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -34,7 +34,7 @@ Foolz\\Foolframe\\Controller\\Admin::before#var.sidebar
     ->setParam('sidebar', [])
 
 
-Foolz\\Foolframe\\Model\\Context::handleConsole#obj.app
+Foolz\\FoolFrame\\Model\\Context::handleConsole#obj.app
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -43,7 +43,7 @@ Foolz\\Foolframe\\Model\\Context::handleConsole#obj.app
     ->setParam('application', $application)
 
 
-Foolz\\Foolframe\\Model\\Context::handleWeb#obj.afterAuth
+Foolz\\FoolFrame\\Model\\Context::handleWeb#obj.afterAuth
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -52,7 +52,7 @@ Foolz\\Foolframe\\Model\\Context::handleWeb#obj.afterAuth
     ->setParam('route_collection', $this->route_collection)
 
 
-Foolz\\Foolframe\\Model\\Context::handleWeb#obj.routing
+Foolz\\FoolFrame\\Model\\Context::handleWeb#obj.routing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -61,7 +61,7 @@ Foolz\\Foolframe\\Model\\Context::handleWeb#obj.routing
     ->setParam('route_collection', $this->route_collection)
 
 
-Foolz\\Foolframe\\Model\\Context::handleWeb#obj.context
+Foolz\\FoolFrame\\Model\\Context::handleWeb#obj.context
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -69,7 +69,7 @@ Foolz\\Foolframe\\Model\\Context::handleWeb#obj.context
     ->setObject($this)
 
 
-Foolz\\Foolframe\\Model\\Context::handleWeb#obj.request
+Foolz\\FoolFrame\\Model\\Context::handleWeb#obj.request
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -78,7 +78,7 @@ Foolz\\Foolframe\\Model\\Context::handleWeb#obj.request
     ->setParam('request', $request)
 
 
-Foolz\\Foolframe\\Model\\Context::handleWeb#obj.response
+Foolz\\FoolFrame\\Model\\Context::handleWeb#obj.response
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -87,7 +87,7 @@ Foolz\\Foolframe\\Model\\Context::handleWeb#obj.response
     ->setParam('request', $request)
 
 
-Foolz\\Foolframe\\Model\\Preferences::load#var.preferences
+Foolz\\FoolFrame\\Model\\Preferences::load#var.preferences
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -96,7 +96,7 @@ Foolz\\Foolframe\\Model\\Preferences::load#var.preferences
     ->setParam('preferences', $this->preferences)
 
 
-Foolz\\Foolframe\\Model\\SchemaManager::forge#var.ignorePrefix
+Foolz\\FoolFrame\\Model\\SchemaManager::forge#var.ignorePrefix
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -105,7 +105,7 @@ Foolz\\Foolframe\\Model\\SchemaManager::forge#var.ignorePrefix
     ->setParam('prefixes', $prefixes)
 
 
-Foolz\\Foolframe\\Model\\SchemaManager::forge#var.tables
+Foolz\\FoolFrame\\Model\\SchemaManager::forge#var.tables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -114,7 +114,7 @@ Foolz\\Foolframe\\Model\\SchemaManager::forge#var.tables
     ->setParam('tables', $tables)
 
 
-Foolz\\Foolframe\\Model\\System::getEnvironment#var.environment
+Foolz\\FoolFrame\\Model\\System::getEnvironment#var.environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -125,16 +125,43 @@ Foolz\\Foolframe\\Model\\System::getEnvironment#var.environment
 FoolFuuka
 ---------
 
-Foolz\\Foolfuuka\\Model\\Comment::processComment#var.greentext
+Foolz\\FoolFuuka\\Model\\Comment::processComment#var.greentext
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
 
     ->setParam('html', $html)
 
-Foolz\\Foolfuuka\\Model\\Comment::processExternalLinks#var.link
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Foolz\\FoolFuuka\\Model\\Comment::processComment#var.originalComment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: php
+
+    ->setObject($this)
+    ->setParam('comment', $this->comment->comment)
+
+
+Foolz\\FoolFuuka\\Model\\Comment::processComment#var.processedComment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: php
+
+    ->setObject($this)
+    ->setParam('comment', $this->comment->comment)
+
+
+Foolz\\FoolFuuka\\Model\\Comment::processCommentBBCode#var.definitions
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: php
+
+    ->setObject($this)
+    ->setParam('definitions', $definitions)
+
+
+Foolz\\FoolFuuka\\Model\\Comment::processExternalLinks#var.link
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
 
@@ -143,7 +170,7 @@ Foolz\\Foolfuuka\\Model\\Comment::processExternalLinks#var.link
     ->setParam('build_href', $build_href)
 
 
-Foolz\\Foolfuuka\\Model\\Comment::processInternalLinks#var.link
+Foolz\\FoolFuuka\\Model\\Comment::processInternalLinks#var.link
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -153,7 +180,7 @@ Foolz\\Foolfuuka\\Model\\Comment::processInternalLinks#var.link
     ->setParam('build_url', $build_url)
 
 
-Foolz\\Foolfuuka\\Model\\CommentInsert::insert#obj.captcha
+Foolz\\FoolFuuka\\Model\\CommentInsert::insert#obj.captcha
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -161,7 +188,7 @@ Foolz\\Foolfuuka\\Model\\CommentInsert::insert#obj.captcha
     ->setObject($this)
 
 
-Foolz\\Foolfuuka\\Model\\CommentInsert::insert#obj.afterInputCheck
+Foolz\\FoolFuuka\\Model\\CommentInsert::insert#obj.afterInputCheck
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -169,7 +196,7 @@ Foolz\\Foolfuuka\\Model\\CommentInsert::insert#obj.afterInputCheck
     ->setObject($this)
 
 
-Foolz\\Foolfuuka\\Model\\CommentInsert::insert#obj.comment
+Foolz\\FoolFuuka\\Model\\CommentInsert::insert#obj.comment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -177,7 +204,7 @@ Foolz\\Foolfuuka\\Model\\CommentInsert::insert#obj.comment
     ->setObject($this)
 
 
-Foolz\\Foolfuuka\\Model\\Context::loadRoutes#obj.beforeRouting
+Foolz\\FoolFuuka\\Model\\Context::loadRoutes#obj.beforeRouting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -186,17 +213,17 @@ Foolz\\Foolfuuka\\Model\\Context::loadRoutes#obj.beforeRouting
     ->setParam('route_collection', $route_collection)
 
 
-Foolz\\Foolfuuka\\Model\\Context::loadRoutes#var.collection
+Foolz\\FoolFuuka\\Model\\Context::loadRoutes#var.collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
 
     ->setParam('default_suffix', page)
     ->setParam('suffix', page)
-    ->setParam('controller', 'Foolz\\Foolfuuka\\Controller\\Chan::*')
+    ->setParam('controller', 'Foolz\\FoolFuuka\\Controller\\Chan::*')
 
 
-Foolz\\Foolfuuka\\Model\\Context::loadRoutes#obj.afterRouting
+Foolz\\FoolFuuka\\Model\\Context::loadRoutes#obj.afterRouting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -205,7 +232,7 @@ Foolz\\Foolfuuka\\Model\\Context::loadRoutes#obj.afterRouting
     ->setParam('route_collection', $route_collection)
 
 
-Foolz\\Foolfuuka\\Model\\Media::getLink#exec.beforeMethod
+Foolz\\FoolFuuka\\Model\\Media::getLink#exec.beforeMethod
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -214,7 +241,7 @@ Foolz\\Foolfuuka\\Model\\Media::getLink#exec.beforeMethod
     ->setParam('thumbnail', $thumbnail)
 
 
-Foolz\\Foolfuuka\\Model\\Media::insert#var.media
+Foolz\\FoolFuuka\\Model\\Media::insert#var.media
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -230,7 +257,7 @@ Foolz\\Foolfuuka\\Model\\Media::insert#var.media
     ->setParam('preview_orig', $preview_orig)
 
 
-Foolz\\Foolfuuka\\Model\\Media::insert#exec.createThumbnail
+Foolz\\FoolFuuka\\Model\\Media::insert#exec.createThumbnail
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -244,7 +271,7 @@ Foolz\\Foolfuuka\\Model\\Media::insert#exec.createThumbnail
     ->setParam('exec', $exec)
 
 
-Foolz\\Foolfuuka\\Model\\MediaFactory::forgeFromUpload#var.config
+Foolz\\FoolFuuka\\Model\\MediaFactory::forgeFromUpload#var.config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
@@ -252,14 +279,14 @@ Foolz\\Foolfuuka\\Model\\MediaFactory::forgeFromUpload#var.config
     ->setParam('ext_whitelist', [])
     ->setParam('mime_whitelist', [])
 
-Foolz\\Foolfuuka\\Model\\RadixCollection::structure#var.structure
+Foolz\\FoolFuuka\\Model\\RadixCollection::structure#var.structure
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
 
     ->setParam('structure', $structure)
 
-Foolz\\Foolfuuka\\Model\\RadixCollection::preload#var.radixes
+Foolz\\FoolFuuka\\Model\\RadixCollection::preload#var.radixes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: php
