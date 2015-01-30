@@ -1,0 +1,39 @@
+What's New in FoolFuuka 2.2.0
+=============================
+
+FoolFuuka 2.2.0 includes a few new features and an overhaul in parts of the code base.
+The most notable change is the removal of all plugins from the standard distribution
+which will need to be re-installed manually.
+
+
+Features
+--------
+
+* added highlight.js for code highlighting
+* group/cluster search results by thread
+* Mailer class can be configured with `swiftmailer.php` config file
+
+
+Performance
+-----------
+
+* changed autoloading of themes and various components to PSR-4
+* removed entire `media.filecheck` logic
+
+
+Fixes
+-----
+
+* removed trailing forward-slash in default media url
+* reports view now displays board name and view button
+* rewrote sticky/locked toggle logic on archive boards
+
+
+Misc.
+-----
+
+* added additional software hooks in `Comment`
+* decoupled all plugins from standard distribution
+* replaced StringParser with jBBCode
+* updated FoolFuuka namespace
+* updated FoolFuuka dependencies
