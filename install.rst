@@ -30,8 +30,8 @@ Via Source Code
 
     $ git clone https://github.com/FoolCode/FoolFuuka foolfuuka
     $ cd foolfuuka
-    $ git checkout 2-1-stable
-    $ composer install --optimize
+    $ git checkout 2-2-stable
+    $ composer install --optimize-autoloader
 
 
 Upgrading
@@ -40,7 +40,7 @@ Upgrading
 .. code-block:: sh
 
     $ git fetch --all
-    $ git checkout 2-1-stable
+    $ git checkout 2-2-stable
     $ composer update --optimize
 
 .. note::
