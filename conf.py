@@ -18,7 +18,7 @@ copyright = u'2012-2015, FoolCode'
 version = '2.1.0'
 release = version
 
-exclude_patterns = ['_build', 'html', 'doctrees']
+exclude_patterns = ['_build', 'examples', 'html', 'doctrees']
 add_function_parentheses = True
 add_module_names = True
 show_authors = False

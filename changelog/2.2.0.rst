@@ -9,9 +9,9 @@ which will need to be re-installed manually.
 Features
 --------
 
+* added GroupByThread option for search results
 * added highlight.js for code highlighting
-* group/cluster search results by thread
-* Mailer class can be configured with `swiftmailer.php` config file
+* added configurable `swiftmailer` config file for Mailer
 
 
 Performance
@@ -34,6 +34,7 @@ Misc.
 
 * added additional software hooks in `Comment`
 * decoupled all plugins from standard distribution
+* moved 4chan specific BBCode to separate plugin
 * replaced StringParser with jBBCode
 * updated FoolFuuka namespace
 * updated FoolFuuka dependencies

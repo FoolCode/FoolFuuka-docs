@@ -1,0 +1,8 @@
+<VirtualHost *:80>
+  ServerName www.domain.tld
+  DocumentRoot /var/www/foolfuuka/public
+  <Directory /var/www/foolfuuka/public>
+    Options FollowSymLinks
+    AllowOverride All
+  </Directory>
+</VirtualHost>

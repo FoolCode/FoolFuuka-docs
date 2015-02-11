@@ -11,6 +11,8 @@ You'll need to install one of the following web servers to allow users to access
 * Apache
 * nginx (Recommended)
 
+.. seealso:: `Virtual Hosts Examples <https://github.com/FoolCode/FoolFuuka-docs/tree/master/examples/vhosts>`_
+
 
 Database
 --------
