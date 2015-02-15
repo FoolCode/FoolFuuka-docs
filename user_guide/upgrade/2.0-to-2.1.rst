@@ -29,7 +29,7 @@ Via Composer
 
 .. code-block:: sh
 
-    $ composer create-project foolz/foolfuuka foolfuuka
+    $ composer create-project foolz/foolfuuka foolfuuka 2.1.0
     $ cd foolfuuka
     $ composer dump-autoload --optimize
 
@@ -42,7 +42,7 @@ Via Source Code
     $ git clone https://github.com/FoolCode/FoolFuuka foolfuuka
     $ cd foolfuuka
     $ git checkout 2-1-stable
-    $ composer install --optimize
+    $ composer install --optimize-autoloader
 
 
 Copy App Files and Data
