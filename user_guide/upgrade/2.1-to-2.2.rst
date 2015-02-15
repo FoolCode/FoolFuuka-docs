@@ -22,7 +22,7 @@ Obtain the Latest Code
 
     $ cd /path/to/foolfuuka
     $ git checkout 2-2-stable
-    $ composer update --optimize
+    $ composer update --optimize-autoloader
 
 
 Update Core Framework Config Files
