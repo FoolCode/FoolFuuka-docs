@@ -41,7 +41,7 @@ Upgrading
 
     $ git fetch --all
     $ git checkout 2-2-stable
-    $ composer update --optimize
+    $ composer update --optimize-autoloader
 
 .. note::
 
